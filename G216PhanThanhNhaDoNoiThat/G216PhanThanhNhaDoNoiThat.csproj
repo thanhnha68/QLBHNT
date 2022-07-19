@@ -1,0 +1,500 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E252147-6F32-48D9-81E2-86ED90640112}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>G216PhanThanhNhaDoNoiThat</RootNamespace>
+    <AssemblyName>G216PhanThanhNhaDoNoiThat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrCart.aspx" />
+    <Content Include="FrChuyenNhom.aspx" />
+    <Content Include="FrPhanCong.aspx" />
+    <Content Include="FrQLCTHD.aspx" />
+    <Content Include="FrQLDDH.aspx" />
+    <Content Include="FrQLKH.aspx" />
+    <Content Include="FrQLKho.aspx" />
+    <Content Include="FrManagements.aspx" />
+    <Content Include="FrOrder.aspx" />
+    <Content Include="FrQLCM.aspx" />
+    <Content Include="FrQLHH.aspx" />
+    <Content Include="FrQLKV.aspx" />
+    <Content Include="FrQLNhapXuat.aspx" />
+    <Content Include="FrQLNV.aspx" />
+    <Content Include="FrQLNSX.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="Media\ap.jpg" />
+    <Content Include="Media\ban-an-dubai.jpg" />
+    <Content Include="Media\ban-an-mo-rong-cartesio.jpg" />
+    <Content Include="Media\ban-an-mo-rong-cartesio1.jpg" />
+    <Content Include="Media\ban-an-mo-rong-sincro.jpg" />
+    <Content Include="Media\ban-an-mo-rong-sincro1.jpg" />
+    <Content Include="Media\ban-an-roma.jpg" />
+    <Content Include="Media\ban-an-roma1.jpg" />
+    <Content Include="Media\ban-an-snap.jpg" />
+    <Content Include="Media\ban-an-snap1.jpg" />
+    <Content Include="Media\ban-ban-at-.jpg" />
+    <Content Include="Media\ban-ben-tranglacvien.jpg" />
+    <Content Include="Media\ban-dau-giuong-city1.jpg" />
+    <Content Include="Media\ban-dau-giuong-maxine.jpg" />
+    <Content Include="Media\ban-dau-giuong-maxine1.jpg" />
+    <Content Include="Media\ban-dau-giuong-may_-_copy.jpg" />
+    <Content Include="Media\ban-dau-giuong-pio.jpg" />
+    <Content Include="Media\ban-dau-giuong-victoria.jpg" />
+    <Content Include="Media\ban-dau-giuong-victoria1.jpg" />
+    <Content Include="Media\ban-dg-city-cs576a.jpg" />
+    <Content Include="Media\ban-lam-viec-biblio.jpg" />
+    <Content Include="Media\ban-lam-viec-biblio1.jpg" />
+    <Content Include="Media\ban-lam-viec-bui.jpg" />
+    <Content Include="Media\ban-lam-viec-bui1.jpg" />
+    <Content Include="Media\ban-lam-viec-layers.jpg" />
+    <Content Include="Media\ban-lam-viec-layers1.jpg" />
+    <Content Include="Media\ban-lam-viec-skagen.jpg" />
+    <Content Include="Media\ban-lam-viec-skagen1.jpg" />
+    <Content Include="Media\ban-lam-viec-victoria.jpg" />
+    <Content Include="Media\ban-lam-viec-victoria1.jpg" />
+    <Content Include="Media\ban-lamviec-maxine.jpg" />
+    <Content Include="Media\ban-lamviec-maxine1.jpg" />
+    <Content Include="Media\ban-nuoc-atollo.jpg" />
+    <Content Include="Media\ban-nuoc-atollo1.jpg" />
+    <Content Include="Media\ban-nuoc-bridge- marble.jpg" />
+    <Content Include="Media\ban-nuoc-bridge-mat-marble.jpg" />
+    <Content Include="Media\ban-nuoc-bridge.jpg" />
+    <Content Include="Media\ban-nuoc-bridge1.jpg" />
+    <Content Include="Media\ban-nuoc-filo.jpg" />
+    <Content Include="Media\ban-nuoc-filo1.jpg" />
+    <Content Include="Media\ban-nuoc-jazz.jpg" />
+    <Content Include="Media\ban-nuoc-low.jpg" />
+    <Content Include="Media\ban-nuoc-low1.jpg" />
+    <Content Include="Media\ban-nuoc-pop.jpg" />
+    <Content Include="Media\ban-nuoc-rumba.jpg" />
+    <Content Include="Media\ban-nuoc-rumba1.jpg" />
+    <Content Include="Media\ban-nuoc-tweet-walnut.jpg" />
+    <Content Include="Media\ban-nuoc-tweet-walnut1.jpg" />
+    <Content Include="Media\ban-trang-diem-may.jpg" />
+    <Content Include="Media\ban-trang-diem-may2.jpg" />
+    <Content Include="Media\ban-trang-diem-skagen-3-101933-3.jpg" />
+    <Content Include="Media\ban-trang-diem-skagen-3-101933.jpg" />
+    <Content Include="Media\bandaugiuongpio.jpg" />
+    <Content Include="Media\banner.png" />
+    <Content Include="Media\bantrangdiemharmony.jpg" />
+    <Content Include="Media\bantrangdiemharmony2.jpg" />
+    <Content Include="Media\ban_dau_giuong_may.jpg" />
+    <Content Include="Media\ban_dau_giuong_may2.jpg" />
+    <Content Include="Media\ban_lam_viec_match.jpg" />
+    <Content Include="Media\ban_lam_viec_match1.jpg" />
+    <Content Include="Media\ban_nuoc_may.jpg" />
+    <Content Include="Media\ban_nuoc_pio_.jpg" />
+    <Content Include="Media\ban_phan_venice.jpg" />
+    <Content Include="Media\bdg-city-500.jpg" />
+    <Content Include="Media\bo-ban-an-skagen.jpg" />
+    <Content Include="Media\bo-ban-an-skagen1.jpg" />
+    <Content Include="Media\bo-ban-an-victor.jpg" />
+    <Content Include="Media\bo_ban_an_pop.jpg" />
+    <Content Include="Media\bo_ban_an_pop1.jpg" />
+    <Content Include="Media\bo_ban_an_victoria.jpg" />
+    <Content Include="Media\den-dung-pom-pom.jpg" />
+    <Content Include="Media\den-dung-pom-pom1.jpg" />
+    <Content Include="Media\den-tran-monte.jpg" />
+    <Content Include="Media\den-tran-monte1.jpg" />
+    <Content Include="Media\den-tran-parecchi.jpg" />
+    <Content Include="Media\den-tran-parecchi1.jpg" />
+    <Content Include="Media\ghe-an-co-tay-bridge.jpg" />
+    <Content Include="Media\ghe-an-co-tay-bridge1.jpg" />
+    <Content Include="Media\ghe-an-may.jpg" />
+    <Content Include="Media\ghe-basil-chrome.jpg" />
+    <Content Include="Media\ghe-basil-chrome1.jpg" />
+    <Content Include="Media\ghe-boucle.jpg" />
+    <Content Include="Media\ghe-lilly.jpg" />
+    <Content Include="Media\ghe-lilly1.jpg" />
+    <Content Include="Media\ghe-newyork.jpg" />
+    <Content Include="Media\ghe-newyork1.jpg" />
+    <Content Include="Media\ghe-roma.jpg" />
+    <Content Include="Media\ghe-roma1.jpg" />
+    <Content Include="Media\ghe-sainttropez.jpg" />
+    <Content Include="Media\ghe-sainttropez1.jpg" />
+    <Content Include="Media\giuongdixie.jpg" />
+    <Content Include="Media\giuongharmony.jpg" />
+    <Content Include="Media\giuongiris.jpg" />
+    <Content Include="Media\giuongmiamsevilla.jpg" />
+    <Content Include="Media\giuongpenny.jpg" />
+    <Content Include="Media\giuongportlanddgrey.jpg" />
+    <Content Include="Media\giuongvictoria.jpg" />
+    <Content Include="Media\giuongvictoriasum.jpg" />
+    <Content Include="Media\giuongwynn.jpg" />
+    <Content Include="Media\guong-damasco.jpg" />
+    <Content Include="Media\guong-moss.jpg" />
+    <Content Include="Media\guong-moss1.jpg" />
+    <Content Include="Media\guong-pattern.jpg" />
+    <Content Include="Media\guong-pleasure.jpg" />
+    <Content Include="Media\guong-pleasure1.jpg" />
+    <Content Include="Media\ke-hangar-cao.jpg" />
+    <Content Include="Media\ke-hangar-cao1.jpg" />
+    <Content Include="Media\ke-hangar.jpg" />
+    <Content Include="Media\ke-hangar1.jpg" />
+    <Content Include="Media\ke-puro.jpg" />
+    <Content Include="Media\ke-sach-brem.jpg" />
+    <Content Include="Media\ke-sach-division.jpg" />
+    <Content Include="Media\ke-sach-division1.jpg" />
+    <Content Include="Media\ke-sach-division2.jpg" />
+    <Content Include="Media\ke-sach-division3.jpg" />
+    <Content Include="Media\ke-sach-gamma.jpg" />
+    <Content Include="Media\ke-sach-gamma1.jpg" />
+    <Content Include="Media\ke-sach-lib.jpg" />
+    <Content Include="Media\ke-sach-lib1.jpg" />
+    <Content Include="Media\ke-sach-maxine.jpg" />
+    <Content Include="Media\ke-treo-moss.jpg" />
+    <Content Include="Media\ke-treo-moss1.jpg" />
+    <Content Include="Media\ke-trung-bay-teca.jpg" />
+    <Content Include="Media\ke-trung-bay-teca1.jpg" />
+    <Content Include="Media\ke_trung_bay_bui.jpg" />
+    <Content Include="Media\line-may_makeup-table.jpg" />
+    <Content Include="Media\maxine.jpg" />
+    <Content Include="Media\may-ban-nuoc.jpg" />
+    <Content Include="Media\miami_table.jpg" />
+    <Content Include="Media\nhaxinh-bo-suu-tap-may-ban-trang-diem.jpg" />
+    <Content Include="Media\nhaxinh-phong-ngu-may-201210.jpg" />
+    <Content Include="Media\NhaXinhbanner.png" />
+    <Content Include="Media\phong-an-bridge.jpg" />
+    <Content Include="Media\phong-an-bui.jpg" />
+    <Content Include="Media\phong-an-dubai.jpg" />
+    <Content Include="Media\phong-an-may.jpg" />
+    <Content Include="Media\phong-an-miami.jpg" />
+    <Content Include="Media\phong-khach-bridge.jpg" />
+    <Content Include="Media\phong-khach-bui.jpg" />
+    <Content Include="Media\phong-khach-dubai4.jpg" />
+    <Content Include="Media\phong-khach-happy.jpg" />
+    <Content Include="Media\phong-khach-hien-dai-roma.jpg" />
+    <Content Include="Media\phong-khach-jazz.jpg" />
+    <Content Include="Media\phong-khach-may.jpg" />
+    <Content Include="Media\phong-khach-pop.jpg" />
+    <Content Include="Media\phongngubui.jpg" />
+    <Content Include="Media\phong_ngu_venice_s_2.jpg" />
+    <Content Include="Media\pio_table.jpg" />
+    <Content Include="Media\sofa-adam.jpg" />
+    <Content Include="Media\sofa-carre.jpg" />
+    <Content Include="Media\sofa-carre1.jpg" />
+    <Content Include="Media\sofa-landa.jpg" />
+    <Content Include="Media\sofa-landa1.jpg" />
+    <Content Include="Media\sofa-leaf.jpg" />
+    <Content Include="Media\sofa-leave.jpg" />
+    <Content Include="Media\sofa-miami_armchair.jpg" />
+    <Content Include="Media\sofa-miami_xanh.jpg" />
+    <Content Include="Media\sofa-mies.jpg" />
+    <Content Include="Media\sofa-mies1.jpg" />
+    <Content Include="Media\sofa-norma.jpg" />
+    <Content Include="Media\sofa-norma1.jpg" />
+    <Content Include="Media\sofa-opera-1.jpg" />
+    <Content Include="Media\sofa-opera.jpg" />
+    <Content Include="Media\sofalovely.jpg" />
+    <Content Include="Media\sofamiami.jpg" />
+    <Content Include="Media\sofa_miami_armchair.jpg" />
+    <Content Include="Media\sofa_vai_soc_3_cho_john.jpg" />
+    <Content Include="Media\sofa_vai_soc_3_cho_john1.jpg" />
+    <Content Include="Media\tham-apotema.jpg" />
+    <Content Include="Media\tham-apotema1.jpg" />
+    <Content Include="Media\tham-feike-grey.jpg" />
+    <Content Include="Media\tham-feike-grey1.jpg" />
+    <Content Include="Media\tham-hole.jpg" />
+    <Content Include="Media\tham-hole1.jpg" />
+    <Content Include="Media\tham-offset.jpg" />
+    <Content Include="Media\tham-offset1.jpg" />
+    <Content Include="Media\tham-rose.jpg" />
+    <Content Include="Media\tham-rose1.jpg" />
+    <Content Include="Media\tham-terrazzo.jpg" />
+    <Content Include="Media\tham-terrazzo1.jpg" />
+    <Content Include="Media\tham_sacramento_grey.jpg" />
+    <Content Include="Media\tham_sacramento_grey1.jpg" />
+    <Content Include="Media\tu-ao-harmony-1.jpg" />
+    <Content Include="Media\tu-ao-harmony-2.jpg" />
+    <Content Include="Media\tu-ao-harmony-3.jpg" />
+    <Content Include="Media\tu-ao-hien-dai-4.jpg" />
+    <Content Include="Media\tu-ao-hien-dai-5-500.jpg" />
+    <Content Include="Media\tu-ao-hien-dai-500.jpg" />
+    <Content Include="Media\tu-ao-victoria.jpg" />
+    <Content Include="Media\tu-hoc-keo-boston 1.jpg" />
+    <Content Include="Media\tu-hoc-keo-boston.jpg" />
+    <Content Include="Media\tu-hoc-keo-dubai.jpg" />
+    <Content Include="Media\tu-ly-bridge.jpg" />
+    <Content Include="Media\tu-ly-may.jpg" />
+    <Content Include="Media\tu-ly-may1.jpg" />
+    <Content Include="Media\tu-ly-roma.jpg" />
+    <Content Include="Media\tu-ly-roma1.jpg" />
+    <Content Include="Media\tu-ly-seattle.jpg" />
+    <Content Include="Media\tu-ly-seattle1.jpg" />
+    <Content Include="Media\tu-ly-secret.jpg" />
+    <Content Include="Media\tu-ly-sipario.jpg" />
+    <Content Include="Media\tu-ly-sipario1.jpg" />
+    <Content Include="Media\tu-ly-soul.jpg" />
+    <Content Include="Media\tu-ly-soul1.jpg" />
+    <Content Include="Media\tu-ly_lake-smoke.jpg" />
+    <Content Include="Media\tu-ly_lake-smoke1.jpg" />
+    <Content Include="Media\tu-manhattan.jpg" />
+    <Content Include="Media\tu-manhattan1.jpg" />
+    <Content Include="Media\tu-tivi-artigo.jpg" />
+    <Content Include="Media\tu-tivi-artigo1.jpg" />
+    <Content Include="Media\tu-tivi-bridge.jpg" />
+    <Content Include="Media\tu-tivi-bridge1.jpg" />
+    <Content Include="Media\tu-tivi-factory.jpg" />
+    <Content Include="Media\tu-tivi-factory1.jpg" />
+    <Content Include="Media\tu-tivi-roma.jpg" />
+    <Content Include="Media\tu-tivi-secret.jpg" />
+    <Content Include="Media\tu-tivi-secret1.jpg" />
+    <Content Include="Media\tu-tivi-sipario.jpg" />
+    <Content Include="Media\tu-tivi-sipario1.jpg" />
+    <Content Include="Media\tu-tv-horizon.jpg" />
+    <Content Include="Media\tu-tv-horizon1.jpg" />
+    <Content Include="Media\tu-tv-porto.jpg" />
+    <Content Include="Media\tu-tv-porto1.jpg" />
+    <Content Include="Media\tuaohiendai1.jpg" />
+    <Content Include="Media\tuaohiendai2.jpg" />
+    <Content Include="Media\tuaomaxine.jpg" />
+    <Content Include="Media\tuaomaxine2.jpg" />
+    <Content Include="Media\tuaovictoria.jpg" />
+    <Content Include="Media\tucity.jpg" />
+    <Content Include="Media\tuhockeopio.jpg" />
+    <Content Include="Media\tu_hoc_keo_harmony.jpg" />
+    <Content Include="Media\tu_ly_secret1.jpg" />
+    <Content Include="Media\tu_tv_bui.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrQLLNT.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrCart.aspx.cs">
+      <DependentUpon>FrCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrCart.aspx.designer.cs">
+      <DependentUpon>FrCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrChuyenNhom.aspx.cs">
+      <DependentUpon>FrChuyenNhom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrChuyenNhom.aspx.designer.cs">
+      <DependentUpon>FrChuyenNhom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrPhanCong.aspx.cs">
+      <DependentUpon>FrPhanCong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrPhanCong.aspx.designer.cs">
+      <DependentUpon>FrPhanCong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLCTHD.aspx.cs">
+      <DependentUpon>FrQLCTHD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLCTHD.aspx.designer.cs">
+      <DependentUpon>FrQLCTHD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLDDH.aspx.cs">
+      <DependentUpon>FrQLDDH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLDDH.aspx.designer.cs">
+      <DependentUpon>FrQLDDH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLKH.aspx.cs">
+      <DependentUpon>FrQLKH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLKH.aspx.designer.cs">
+      <DependentUpon>FrQLKH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLKho.aspx.cs">
+      <DependentUpon>FrQLKho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLKho.aspx.designer.cs">
+      <DependentUpon>FrQLKho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrManagements.aspx.cs">
+      <DependentUpon>FrManagements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrManagements.aspx.designer.cs">
+      <DependentUpon>FrManagements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrOrder.aspx.cs">
+      <DependentUpon>FrOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrOrder.aspx.designer.cs">
+      <DependentUpon>FrOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLCM.aspx.cs">
+      <DependentUpon>FrQLCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLCM.aspx.designer.cs">
+      <DependentUpon>FrQLCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLHH.aspx.cs">
+      <DependentUpon>FrQLHH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLHH.aspx.designer.cs">
+      <DependentUpon>FrQLHH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLKV.aspx.cs">
+      <DependentUpon>FrQLKV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLKV.aspx.designer.cs">
+      <DependentUpon>FrQLKV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLNhapXuat.aspx.cs">
+      <DependentUpon>FrQLNhapXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLNhapXuat.aspx.designer.cs">
+      <DependentUpon>FrQLNhapXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLNV.aspx.cs">
+      <DependentUpon>FrQLNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLNV.aspx.designer.cs">
+      <DependentUpon>FrQLNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrQLNSX.aspx.cs">
+      <DependentUpon>FrQLNSX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLNSX.aspx.designer.cs">
+      <DependentUpon>FrQLNSX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrQLLNT.aspx.cs">
+      <DependentUpon>FrQLLNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrQLLNT.aspx.designer.cs">
+      <DependentUpon>FrQLLNT.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60411/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
